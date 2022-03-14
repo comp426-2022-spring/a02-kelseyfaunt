@@ -22,7 +22,7 @@ function coinFlip() {
   } else {
     x = 'heads';
   }
-  return {x};
+  return x;
 }
 
 /** Multiple coin flips
