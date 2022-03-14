@@ -3,8 +3,11 @@ import {flipACoin} from './modules/coin.js';
 console.log(process.argv);
 const args = (process.argv.slice(2));
 var temp = args[0];
+if(temp.size() < 2) {
+    console.log("Error: no input.");
+}
 temp = args[0].split('=');
-console.log(temp);
+
 
 if(args.length == 0) {
     console.log("Error: no input.");
