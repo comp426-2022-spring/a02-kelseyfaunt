@@ -68,21 +68,19 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
+  var results = { heads: 0, tails: 0 };
   var tailcount = 0;
   var headcount = 0;
   for(var i = 0; i<array.length; i++) {
     if(array[i].equals('heads') == 0) {
-      headcount++;
-    } 
-    if(array[i].equals('tails') == 0) {
-      tailcount++;
+      final.heads++;
+    } else if(array[i].equals('tails') == 0) {
+      final.tails++;
+    } else {
+      return "Error";
     }
   }
-  var obj = {
-    tails: tailcount,
-    heads: headcount,
-  }
-  return obj;
+  return final;
 
 }
 
