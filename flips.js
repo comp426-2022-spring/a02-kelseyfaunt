@@ -4,13 +4,13 @@ import {createRequire} from 'module';
 
 const require = createRequire(import.meta.url);
 const args = require('minimist')(process.argv.slice(2));
-args['number'];
+
 if(args.length == 0) {
     console.log(1, coinFlips(1));
 }
 
-const number = coinFlips(args.number);
-console.log(number, coinFlips(number));
+const final = coinFlips(args.number);
+console.log(final, coinFlips(final));
 
 
 
