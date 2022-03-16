@@ -29,4 +29,4 @@ temp = args[0].split('=');
 
 console.log(coinFlips(temp[1]));
 */
-}
+
