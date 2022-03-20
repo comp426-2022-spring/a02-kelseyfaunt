@@ -64,25 +64,15 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  var he = {heads: 1};
-  var ta = {tails: 1};
-  if(array.length === 1) {
-    if(array[i] === 'heads') {
-      return he;
-    } else if(array[i] === 'tails') {
-      return ta;
-    } else {
-      return 'Error';
-    }
-  }
+
   var final = { heads: 0, tails: 0 };
   for(var i = 0; i<array.length; i++) {
-    if(array[i] === 'heads') {
+    if(array[i] == "heads") {
       final.heads++;
-    } else if(array[i] === 'tails') {
+    } else if(array[i] == "tails") {
       final.tails++;
     } else {
-      return 'Error';
+      return "Error";
     }
   }
   return final;
