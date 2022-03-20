@@ -105,7 +105,7 @@ function flipACoin(call) {
     final.flip = 'lose';
   }
   
-  return obj;
+  return final;
 }
 
 
