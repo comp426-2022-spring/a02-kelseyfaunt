@@ -66,9 +66,9 @@ function coinFlips(flips) {
 function countFlips(array) {
   var final = { heads: 0, tails: 0 };
   for(var i = 0; i<array.length; i++) {
-    if(array[i].equals('heads') == 0) {
+    if(array[i] === 'heads') {
       final.heads++;
-    } else if(array[i].equals('tails') == 0) {
+    } else if(array[i] === 'tails') {
       final.tails++;
     } else {
       return 'Error';
