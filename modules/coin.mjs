@@ -93,6 +93,7 @@ function countFlips(array) {
 
 function flipACoin(call) {
   if(call !== 'heads' && call !== 'tails') {
+    console.log("Error: no input. Usage: node guess-flip --call=[heads|tails]");
     return;
   }
   var final = { call: '', flip: '', result: '' };
