@@ -43,7 +43,7 @@ function coinFlips(flips) {
   }
   var array = [];
   for (var i=0; i<flips; i++) {
-    array.push(coinFlip());
+    array.push( Math.random() < 0.5 ? 'heads':'tails');
   }
 
   return array;
