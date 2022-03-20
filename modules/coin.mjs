@@ -111,7 +111,7 @@ function flipACoin(call) {
   if(final.flip === final.call) {
     final.result = 'win';
   } else {
-    final.flip = 'lose';
+    final.result = 'lose';
   }
   
   return final;
