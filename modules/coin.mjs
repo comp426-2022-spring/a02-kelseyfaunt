@@ -64,16 +64,14 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  var results = { heads: 0, tails: 0 };
-  var tailcount = 0;
-  var headcount = 0;
+  var final = { heads: 0, tails: 0 };
   for(var i = 0; i<array.length; i++) {
     if(array[i].equals('heads') == 0) {
       final.heads++;
     } else if(array[i].equals('tails') == 0) {
       final.tails++;
     } else {
-      return "Error";
+      return 'Error';
     }
   }
   return final;
