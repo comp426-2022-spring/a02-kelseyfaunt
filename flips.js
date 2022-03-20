@@ -7,7 +7,9 @@ const args = require('minimist')(process.argv.slice(2));
 
 
 const final = coinFlips(args.number);
-console.log(coinFlips(final));
+const count = countFlips(final);
+console.log(final);
+console.log(count);
 
 
 
