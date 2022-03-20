@@ -1,4 +1,4 @@
-import {flipACoin} from './modules/coin.js';
+import {flipACoin, coinFlip} from './modules/coin.mjs';
 import {createRequire} from 'module';
 
 const require = createRequire(import.meta.url);
