@@ -73,6 +73,11 @@ function countFlips(array) {
       final.tails++;
     } 
   }
+  if(final.heads == 0) {
+    return "{ tails: "+final.tails+" }";
+  } else if(final.tails == 0) {
+    return  "{ heads: "+final.heads+" }";
+  }
   return final;
 
 }
@@ -96,7 +101,7 @@ function flipACoin(call) {
   var final = { call: '', flip: '', result: '' };
   final.call = call;
   final.flip = coinFlip();
-  if(final.flip === final.call) {
+  if(final.flip == final.call) {
     final.result = 'win';
   } else {
     final.result = 'lose';
