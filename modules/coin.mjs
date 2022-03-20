@@ -43,7 +43,7 @@ function coinFlips(flips) {
   }
   var array = [];
   for (var i=0; i<flips; i++) {
-    array[i] = coinFlip();
+    array.push(coinFlip());
   }
 
   return array;
@@ -70,7 +70,7 @@ function countFlips(array) {
     if(array[i] === 'heads') {
       return he;
     } else if(array[i] === 'tails') {
-      retun ta;
+      return ta;
     } else {
       return 'Error';
     }
